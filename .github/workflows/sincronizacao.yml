@@ -1,0 +1,25 @@
+name: Sincronização de Produtos
+
+on:
+  schedule:
+    - cron: "0 12 * * *"
+
+  workflow_dispatch:
+
+jobs:
+  sincronizar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Executar sincronização
+        run: |
+          response=$(curl -s -o response.json -w "%{http_code}" \
+            -X POST \
+            "https://api-integracao-python.onrender.com/integracao/produtos/sincronizar?page_size=30")
+
+          echo "HTTP Status: $response"
+          cat response.json
+
+          if [ "$response" -lt 200 ] || [ "$response" -ge 300 ]; then
+            exit 1
+          fi
