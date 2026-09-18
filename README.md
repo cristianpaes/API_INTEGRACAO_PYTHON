@@ -34,11 +34,11 @@ https://api-integracao-python.onrender.com/docs
 ```
 
 
-```
-### Swagger / Documentação da API
 
+### Swagger / Documentação da API
+```
 <p align="center">
-```markdown
+
   <img src="img/API_integracao.png" alt="Swagger da API" width="900">
 </p>
 
