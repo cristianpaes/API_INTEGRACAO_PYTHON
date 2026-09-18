@@ -34,7 +34,7 @@ https://api-integracao-python.onrender.com/docs
 ```
 
 
-```markdown
+```
 ### Swagger / Documentação da API
 
 <p align="center">
@@ -42,11 +42,7 @@ https://api-integracao-python.onrender.com/docs
   <img src="img/API_integracao.png" alt="Swagger da API" width="900">
 </p>
 
-
-
----
-
-
+```
 
 ### Fluxo principal da integração
 
